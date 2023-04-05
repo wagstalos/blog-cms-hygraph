@@ -1,0 +1,14 @@
+.card {
+    background-color: rgb(255, 255, 255);
+    max-width: 250px;
+    color: rgb(116, 116, 116);
+}
+
+.image {
+    max-width: 100%;
+}
+
+.authorImg{
+    width: 50px;
+    border-radius: 100px;
+}
