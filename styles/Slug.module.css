@@ -71,8 +71,10 @@
     align-items: center;
     justify-content: center;
     background-color: #f3f3f3;
+    color: var(--color-purple);
+    font-weight: 600;
     width: 100px;
-    padding: 12px;
+    padding: 12px 8px;
     border-radius: 8px;
     margin: 0 auto;
 }
