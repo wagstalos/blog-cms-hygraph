@@ -18,3 +18,14 @@
 .hero img {
     width: 50%;
 }
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 8px;
+    }
+    .hero img {
+        width: 100%;
+    }
+    
+}

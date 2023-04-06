@@ -21,4 +21,11 @@
 .author {
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
 }
