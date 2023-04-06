@@ -47,6 +47,7 @@ p {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: 15px;
 }
 
 footer {

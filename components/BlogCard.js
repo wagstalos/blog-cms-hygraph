@@ -19,6 +19,7 @@ export default function BlogPost({
         <div className={styles.text}>
           <h3>{title}</h3>
           <p className={styles.description}>{description}</p>
+
           <div className={styles.author}>
             <img className={styles.authorImg} src={author.avatar.url} alt="" />
             <div>
@@ -28,6 +29,8 @@ export default function BlogPost({
           </div>
 
           <div className={styles.date}></div>
+          <button type='button'>VER MAIS</button>
+          
         </div>
       </Link>
     </div>
