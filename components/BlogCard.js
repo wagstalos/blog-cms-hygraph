@@ -7,6 +7,7 @@ export default function BlogPost({
   coverPhoto,
   datePublished,
   content,
+  description,
   slug,
 }) {
   return (
@@ -16,14 +17,18 @@ export default function BlogPost({
           <img className={styles.image} src={coverPhoto.url} alt={title} />
         </div>
         <div className={styles.text}>
-            <h2>{title}</h2>
-            <div className={styles.author}>
-                <img className={styles.authorImg} src={author.avatar.url} alt="" />
-                <h3>{author.name}</h3>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <div className={styles.author}>
+            <img className={styles.authorImg} src={author.avatar.url} alt="" />
+            <div>
+              <h4>{author.name}</h4>
+              <h4>{datePublished}</h4>
             </div>
+          </div>
+
+          <div className={styles.date}></div>
         </div>
-
-
       </Link>
     </div>
   );

@@ -1,0 +1,20 @@
+.hero {
+    display: flex;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--color-gray-dark);
+    margin-bottom: 16px;
+    line-height: 52px;
+}
+
+.hero h2 strong {
+    color: var(--color-purple);
+}
+
+.hero img {
+    width: 50%;
+}

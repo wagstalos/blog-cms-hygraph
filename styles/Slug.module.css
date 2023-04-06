@@ -1,0 +1,9 @@
+.avatar {
+    width: 50px;
+    border-radius: 100px;
+}
+
+.authtext {
+    display: flex;
+    align-items: center;
+}
