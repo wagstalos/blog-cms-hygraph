@@ -1,9 +1,16 @@
 import styles from "@/styles/Slug.module.css";
 import { GraphQLClient, gql } from "graphql-request";
-import { RxCalendar, RxPerson } from "react-icons/rx";
+import {
+  RxCalendar,
+  RxPerson,
+  RxHome,
+  RxChevronLeft,
+  RxGithubLogo,
+} from "react-icons/rx";
 // import DOMPurify from "dompurify";
 import parse from "html-react-parser";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const graphcms = new GraphQLClient(
   "https://api-sa-east-1.hygraph.com/v2/clg3s1ng31koi01t3deilhg2d/master"
@@ -65,50 +72,64 @@ export async function getStaticProps({ params }) {
 export default function BlogPost({ post }) {
   return (
     <>
-  <main className={styles.blog}>
-      <img
-        src={post.coverPhoto.url}
-        className={styles.cover}
-        alt={post.title}
-      />
+      <main className={styles.blog}>
+        <img
+          src={post.coverPhoto.url}
+          className={styles.cover}
+          alt={post.title}
+        />
 
-      <div className="container">
-        <h1>{post.title}</h1>
-        <div className={styles.author}>
-          <div className={styles.authtext}>
-            <img
-              className={styles.avatar}
-              src={post.author.avatar.url}
-              alt=""
-            />
-            <div>
-              <div className={styles.date}>
-                <RxPerson />
-                <h5>By {post.author.name}</h5>
-              </div>
+        <div className="container">
+          <Link href={"/"} className={styles.backHome}>
+            <RxHome color="#656AF5" size={24} />
+            <span>Home</span>
+          </Link>
 
-              <div className={styles.date}>
-                <RxCalendar />
-                <h6 className={styles.date}>
-                  Publicado em: {post.datePublished}
-                </h6>
+          {/* <div className={styles.post}>
+            <RxPencil1 color="#656AF5"/>
+            <p>post</p>
+          </div> */}
+
+          <h1>{post.title}</h1>
+          <div className={styles.dateCenter}>
+            <RxCalendar />
+            <h6>Publicado em: {post.datePublished}</h6>
+          </div>
+
+          <div className={styles.author}>
+            <div className={styles.authtext}>
+              <img
+                className={styles.avatar}
+                src={post.author.avatar.url}
+                alt="avatar do autor"
+              />
+              <div>
+                <div className={styles.date}>
+                  <RxPerson />
+                  <h5>By {post.author.name}</h5>
+                </div>
+
+                <div className={styles.date}>
+                  <RxGithubLogo />
+                  <h6 className={styles.date}>
+                     /wagstalos
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div
-          className={styles.content}
-          dangerousLySetInnerHTML={{ __html: post.content.html }}
-        >
-          {parse(post.content.html)}
+          <div
+            className={styles.content}
+            dangerousLySetInnerHTML={{ __html: post.content.html }}
+          >
+            {parse(post.content.html)}
+          </div>
         </div>
-      </div>
-    </main>
-    <footer>
-        <Footer/>
+      </main>
+      <footer>
+        <Footer />
       </footer>
     </>
-  
   );
 }
