@@ -28,7 +28,7 @@ export default function Hero() {
         <div className={styles.descriptionHero}>
           <h2>
             Olá prazer, <br />
-            sou <strong>Wagner Silva</strong>
+            sou <strong>Wagner Silva</strong>!
           </h2>
           <p>
             Seja bem-vindo ao mundo da programação front-end! Como desenvolvedor
@@ -37,7 +37,9 @@ export default function Hero() {
           </p>
 
           <div className={styles.btnsHero}>
-            <button type="button">Saber mais</button>
+            <button type="button">
+              <a href="#blog">Saiba mais</a>{" "}
+            </button>
             <button
               className={styles.buttonLight}
               onClick={activateLasers}
@@ -50,7 +52,10 @@ export default function Hero() {
         </div>
 
         <div className={styles.imageHero}>
-          <img src="/images/wagner.png" alt="Imagem do autor do site em um computador" />
+          <img
+            src="/images/wagner.png"
+            alt="Imagem do autor do site em um computador"
+          />
         </div>
       </div>
     </>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "@/styles/BlogCard.module.css";
+import { RxArrowTopRight } from "react-icons/rx";
 
 export default function BlogPost({
   title,
@@ -29,8 +30,10 @@ export default function BlogPost({
           </div>
 
           <div className={styles.date}></div>
-          <button type='button'>VER MAIS</button>
-          
+          <button type="button">
+            <span>VER MAIS</span>
+            <RxArrowTopRight size={18} />
+          </button>
         </div>
       </Link>
     </div>

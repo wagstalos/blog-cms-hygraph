@@ -56,7 +56,7 @@ export default function Home({ posts }) {
       <main className={styles.container}>
         <Hero />
 
-        <h5 className={styles.subtitle}>BLOG</h5>
+        <h5 className={styles.subtitle} id="blog">BLOG</h5>
         <h2 className={styles.title}>Minhas publicações</h2>
         <div className={styles.dflex}>
           {posts.map((post) => (
