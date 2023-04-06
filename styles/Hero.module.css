@@ -96,9 +96,11 @@
 
     .hero img {
         width: 100%;
+        height: auto;
     }
+
     .hero button {
-        padding: 8px 18px;
+        padding: 12px 0;
         width: 48%;
     }
 

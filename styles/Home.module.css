@@ -10,5 +10,17 @@
 }
 
 .title{
-  font-weight: 600;
+  font-weight: 400;
+  text-align: center;
+}
+
+.subtitle{
+  text-align: center;
+  color: var(--color-purple);
+  background-color: #eee3f9;
+  padding: 4px 8px;
+  display: table;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-bottom: 4px;
 }

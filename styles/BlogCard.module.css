@@ -28,12 +28,12 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .authorImg {
     width: 40px;
     border-radius: 100px;
-    margin-top: 20px;
     margin-right: 8px;
 }
 

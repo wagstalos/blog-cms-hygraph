@@ -2,7 +2,6 @@ import styles from "@/styles/Hero.module.css";
 import { RxArrowRight } from "react-icons/rx";
 import {
   DiHtml5,
-  DiJsBadge,
   DiJavascript1,
   DiCss3,
   DiGithubAlt,
@@ -11,8 +10,8 @@ import {
 } from "react-icons/di";
 
 export default function Hero() {
- function activateLasers(){
-    location.href='https://portfolio.wpsgames.com.br/'
+  function activateLasers() {
+    location.href = "https://portfolio.wpsgames.com.br/";
   }
   return (
     <>
@@ -39,7 +38,11 @@ export default function Hero() {
 
           <div className={styles.btnsHero}>
             <button type="button">Saber mais</button>
-            <button className={styles.buttonLight} onClick={activateLasers} type="button">
+            <button
+              className={styles.buttonLight}
+              onClick={activateLasers}
+              type="button"
+            >
               <span>Ver portfolio</span>
               <RxArrowRight />
             </button>
@@ -47,10 +50,7 @@ export default function Hero() {
         </div>
 
         <div className={styles.imageHero}>
-          <img
-            src="https://portfolio.wpsgames.com.br/static/media/avatarSF.80b92329.png"
-            alt=""
-          />
+          <img src="/images/wagner.png" alt="Imagem do autor do site em um computador" />
         </div>
       </div>
     </>
