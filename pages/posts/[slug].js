@@ -1,8 +1,9 @@
 import styles from "@/styles/Slug.module.css";
 import { GraphQLClient, gql } from "graphql-request";
+import { RxCalendar, RxPerson } from "react-icons/rx";
 // import DOMPurify from "dompurify";
 import parse from "html-react-parser";
-
+import Footer from "@/components/Footer";
 
 const graphcms = new GraphQLClient(
   "https://api-sa-east-1.hygraph.com/v2/clg3s1ng31koi01t3deilhg2d/master"
@@ -63,25 +64,51 @@ export async function getStaticProps({ params }) {
 
 export default function BlogPost({ post }) {
   return (
-    <main className={styles.blog}>
-      <img src={post.coverPhoto.url} className={styles.cover} alt="" />
-      <div className={styles.title}>
-        <div className={styles.authtext}>
-          <img className={styles.avatar} src={post.author.avatar.url} alt="" />
-          <div>
-            <h6>By {post.author.name}</h6>
-            <h6 className={styles.date}>Data: {post.datePublished}</h6>
+    <>
+  <main className={styles.blog}>
+      <img
+        src={post.coverPhoto.url}
+        className={styles.cover}
+        alt={post.title}
+      />
+
+      <div className="container">
+        <h1>{post.title}</h1>
+        <div className={styles.author}>
+          <div className={styles.authtext}>
+            <img
+              className={styles.avatar}
+              src={post.author.avatar.url}
+              alt=""
+            />
+            <div>
+              <div className={styles.date}>
+                <RxPerson />
+                <h5>By {post.author.name}</h5>
+              </div>
+
+              <div className={styles.date}>
+                <RxCalendar />
+                <h6 className={styles.date}>
+                  Publicado em: {post.datePublished}
+                </h6>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <h2>{post.title}</h2>
-      <div
-        className={styles.content}
-        dangerousLySetInnerHTML={{ __html: post.content.html }}
-      >
-        {parse(post.content.html)}
 
+        <div
+          className={styles.content}
+          dangerousLySetInnerHTML={{ __html: post.content.html }}
+        >
+          {parse(post.content.html)}
+        </div>
       </div>
     </main>
+    <footer>
+        <Footer/>
+      </footer>
+    </>
+  
   );
 }

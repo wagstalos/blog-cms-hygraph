@@ -1,9 +1,63 @@
+.cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog {
+    color: var(--color-gray-dark);
+}
+
+.blog h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0 10px 0;
+}
+
+.blog .content img {
+    width: 100%;
+    height: auto;
+}
+
 .avatar {
-    width: 50px;
+    width: 45px;
     border-radius: 100px;
+    margin-right: 8px;
+    border: 2px solid #e9e9e9;
+}
+
+.author {
+    margin-bottom: 80px;
 }
 
 .authtext {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+}
+
+.date:first-child {
+    margin-bottom: 4px;
+}
+
+.date h5 {
+    margin-left: 4px;
+}
+
+.date h6 {
+    margin-left: 4px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 40px 0;
+    }
 }

@@ -11,6 +11,9 @@ import {
 } from "react-icons/di";
 
 export default function Hero() {
+ function activateLasers(){
+    location.href='https://portfolio.wpsgames.com.br/'
+  }
   return (
     <>
       <div className={styles.iconsHeader}>
@@ -36,7 +39,7 @@ export default function Hero() {
 
           <div className={styles.btnsHero}>
             <button type="button">Saber mais</button>
-            <button className={styles.buttonLight} type="button">
+            <button className={styles.buttonLight} onClick={activateLasers} type="button">
               <span>Ver portfolio</span>
               <RxArrowRight />
             </button>

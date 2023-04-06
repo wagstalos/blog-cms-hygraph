@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogPost from "@/components/BlogCard";
+import Footer from "@/components/Footer"
 
 import Hero from "@/components/Hero";
 
@@ -34,8 +34,6 @@ const QUERY = gql`
   }
 `;
 
-const inter = Inter({ subsets: ["latin"] });
-
 export async function getStaticProps() {
   const { posts } = await graphcms.request(QUERY);
   return {
@@ -58,7 +56,7 @@ export default function Home({ posts }) {
       <main className={styles.container}>
         <Hero />
 
-        <h2>Minhas publicações</h2>
+        <h2 className={styles.title}>Minhas publicações</h2>
         <div className={styles.dflex}>
           {posts.map((post) => (
             <BlogPost
@@ -74,6 +72,10 @@ export default function Home({ posts }) {
           ))}
         </div>
       </main>
+
+      <footer>
+            <Footer/>
+      </footer>
     </>
   );
 }
