@@ -98,7 +98,8 @@
         width: 100%;
     }
     .hero button {
-        padding: 12px 18px;
+        padding: 4px 18px;
+        width: 48%;
     }
 
     .btnsHero {
