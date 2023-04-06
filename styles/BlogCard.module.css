@@ -4,6 +4,7 @@
     width: 33%;
     border-radius: 8px;
     padding: 8px;
+    color: var(--color-gray-dark);
 }
 
 .image {
@@ -14,9 +15,26 @@
     margin-bottom: 16px;
 }
 
+.text h3 {
+    margin-bottom: 8px;
+}
+
+.text p {
+    color: var(--color-gray-middle);
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .authorImg {
-    width: 50px;
+    width: 40px;
     border-radius: 100px;
+    margin-top: 20px;
+    margin-right: 8px;
 }
 
 .author {

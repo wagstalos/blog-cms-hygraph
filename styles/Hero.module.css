@@ -1,6 +1,21 @@
+.iconsHeader {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.icons {
+    color: #656AF5;
+    background-color: #f7f7f7;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
 .hero {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 80px 0;
     color: var(--color-gray-dark);
     flex-grow: 1;
@@ -26,6 +41,10 @@
     width: 100%;
 }
 
+.btnsHero {
+    display: flex;
+}
+
 .hero button {
     margin-top: 40px;
     background-color: var(--color-purple);
@@ -40,17 +59,58 @@
 
 .hero .buttonLight {
     background-color: var(--color-white);
-    color:var(--color-purple);
+    color: var(--color-purple);
     margin-left: var(--gutter);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.hero .buttonLight:hover {
+    color: var(--color-purple-dark);
+}
+
+.hero .buttonLight span {
+    margin-right: var(--gutter);
+}
+
+.descriptionHero {
+    width: 50%;
+}
+
+.imageHero {
+    width: 40%;
 }
 
 @media only screen and (max-width: 600px) {
     .hero {
         flex-direction: column;
         padding: 50px 8px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
     }
 
     .hero img {
+        width: 100%;
+    }
+    .hero button {
+        padding: 12px 18px;
+    }
+
+    .btnsHero {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .descriptionHero {
+        width: 100%;
+    }
+
+    .imageHero {
         width: 100%;
     }
 

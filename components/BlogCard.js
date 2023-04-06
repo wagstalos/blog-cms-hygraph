@@ -17,13 +17,13 @@ export default function BlogPost({
           <img className={styles.image} src={coverPhoto.url} alt={title} />
         </div>
         <div className={styles.text}>
-          <h2>{title}</h2>
-          <p>{description}</p>
+          <h3>{title}</h3>
+          <p className={styles.description}>{description}</p>
           <div className={styles.author}>
             <img className={styles.authorImg} src={author.avatar.url} alt="" />
             <div>
-              <h4>{author.name}</h4>
-              <h4>{datePublished}</h4>
+              <h5>{author.name}</h5>
+              <h5>{datePublished}</h5>
             </div>
           </div>
 
