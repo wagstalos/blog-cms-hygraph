@@ -55,6 +55,11 @@
     border-radius: var(--border-radius);
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.5s ease;
+}
+
+.hero button:hover {
+    background-color: var(--color-purple-dark);
 }
 
 .hero .buttonLight {
@@ -69,6 +74,7 @@
 
 .hero .buttonLight:hover {
     color: var(--color-purple-dark);
+    background-color: var(--color-white);
 }
 
 .hero .buttonLight span {
@@ -109,11 +115,12 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     .hero .buttonLight {
-       justify-content: center;
-       background-color: rgb(245, 245, 245);
-       margin-left: 0;
-       margin-top: 20px;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        margin-left: 0;
+        margin-top: 20px;
     }
 
 

@@ -85,10 +85,6 @@ export default function BlogPost({ post }) {
             <span>Home</span>
           </Link>
 
-          {/* <div className={styles.post}>
-            <RxPencil1 color="#656AF5"/>
-            <p>post</p>
-          </div> */}
 
           <h1>{post.title}</h1>
           <div className={styles.dateCenter}>
