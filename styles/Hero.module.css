@@ -1,12 +1,19 @@
 .hero {
     display: flex;
+    align-items: center;
     padding: 80px 0;
+    color: var(--color-gray-dark);
+    flex-grow: 1;
+}
+
+.hero p {
+    line-height: 24px;
+    color: var(--color-gray-middle);
 }
 
 .hero h2 {
     font-size: 2.5rem;
     font-weight: 400;
-    color: var(--color-gray-dark);
     margin-bottom: 16px;
     line-height: 52px;
 }
@@ -16,7 +23,25 @@
 }
 
 .hero img {
-    width: 50%;
+    width: 100%;
+}
+
+.hero button {
+    margin-top: 40px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    font-weight: 700;
+    padding: 12px 32px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero .buttonLight {
+    background-color: var(--color-white);
+    color:var(--color-purple);
+    margin-left: var(--gutter);
 }
 
 @media only screen and (max-width: 600px) {
@@ -24,8 +49,9 @@
         flex-direction: column;
         padding: 50px 8px;
     }
+
     .hero img {
         width: 100%;
     }
-    
+
 }

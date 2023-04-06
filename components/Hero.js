@@ -3,7 +3,8 @@ export default function Hero() {
   return (
     <>
       <div className={styles.hero}>
-        <div>
+
+        <div className={styles.description}>
           <h2>
             Olá prazer, <br />
             sou <strong>Wagner Silva</strong>
@@ -15,13 +16,21 @@ export default function Hero() {
             trabalho será criar uma experiência de usuário perfeita que combine
             habilmente design e tecnologia.
           </p>
+
+            <div>
+                <button type="button">Saber mais</button>
+                <button className={styles.buttonLight} type="button">Ver portfolio</button>
+            </div>
+          
         </div>
+        
         <div>
           <img
             src="https://portfolio.wpsgames.com.br/static/media/avatarSF.80b92329.png"
             alt=""
           />
         </div>
+
       </div>
     </>
   );

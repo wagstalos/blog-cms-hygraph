@@ -2,7 +2,7 @@
 
 :root {
   --max-width: 1000px;
-  --border-radius: 12px;
+  --border-radius: 8px;
   --gutter: 8px;
 
   --foreground-rgb: 0, 0, 0;
@@ -11,6 +11,8 @@
 
   --color-purple: #656AF5;
   --color-gray-dark: rgb(63, 72, 86);
+  --color-gray-middle: #6B7280;
+  --color-white: #fff;
 }
 
 * {
@@ -29,7 +31,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #fff
+  background: var(--color-white)
 }
 
 a {
