@@ -1,4 +1,5 @@
 import styles from "@/styles/AboutMe.module.css";
+import { RxOpenInNewWindow } from "react-icons/rx";
 import {
   DiHtml5,
   DiJavascript1,
@@ -10,11 +11,14 @@ import {
   DiGit,
 } from "react-icons/di";
 export default function AboutMe() {
+  function openPortoflio() {
+    location.href = "https://portfolio.wpsgames.com.br/";
+  }
   return (
     <>
       <div className={styles.about}>
         <div className={styles.image}>
-          <img src="https://mkt.croct.com/_next/image?url=https%3A%2F%2Fcdn.croct.io%2Fassets%2Fapp%2F92894646-dc3d-4553-bfaf-194598f6aa4c%2Fimages%2Flp-onboarding-personalization.png&w=828&q=75" />
+          <img src="/images/terminal.png" />
         </div>
 
         <div className={styles.description}>
@@ -39,6 +43,14 @@ export default function AboutMe() {
             <DiGithubAlt size="32" className={styles.icons} />
             <DiGit size="32" className={styles.icons} />
           </div>
+          <button
+              className={styles.buttonLight}
+              onClick={openPortoflio}
+              type="button"
+            >
+              <span>Ver portfolio</span>
+              <RxOpenInNewWindow size={18} />
+            </button>
         </div>
       </div>
     </>
