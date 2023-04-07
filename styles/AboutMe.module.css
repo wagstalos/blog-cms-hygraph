@@ -76,5 +76,8 @@
         text-align: center;
         margin-top: 20px;
     }
+    .about .buttonLight {
+        justify-content: center;
+    }
     
 }
