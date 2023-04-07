@@ -38,7 +38,7 @@ export default function Hero() {
 
           <div className={styles.btnsHero}>
             <button type="button">
-              <a href="#blog">Saiba mais</a>{" "}
+              <a href="#blog">Sobre mim</a>{" "}
             </button>
             <button
               className={styles.buttonLight}

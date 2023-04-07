@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
     color: var(--color-purple);
     font-weight: 600;
     width: 100px;
@@ -79,6 +79,9 @@
     margin: 0 auto;
 }
 
+.backHome:hover{
+    background-color: #f3f3f3;
+}
 .backHome span {
     margin-left: 8px;
 }
