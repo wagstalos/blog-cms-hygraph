@@ -77,7 +77,7 @@
         margin-top: 20px;
     }
     .about .buttonLight {
-        justify-content: center;
+        display: inline;
     }
     
 }
