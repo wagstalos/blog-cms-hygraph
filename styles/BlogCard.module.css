@@ -5,6 +5,7 @@
     border-radius: 8px;
     color: var(--color-gray-dark);
     box-shadow: 0 10px 15px -3px rgb(125 59 236/10%), 0 4px 6px -2px rgb(125 59 236/15%);
+    font-family: 'Roboto Slab', serif;
 }
 
 .image {
