@@ -1,4 +1,7 @@
 import { RxLinkedinLogo, RxGithubLogo } from "react-icons/rx";
+import {
+  DiCodepen,
+} from "react-icons/di";
 export default function Hero() {
   return (
     <>
@@ -11,6 +14,13 @@ export default function Hero() {
         </div>
 
         <div>
+        <a
+            href="https://codepen.io/wagstalos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <DiCodepen size="28"  />
+          </a>
           <a
             href="https://github.com/wagstalos"
             target="_blank"
@@ -27,6 +37,7 @@ export default function Hero() {
             {" "}
             <RxGithubLogo size="24"  />
           </a>
+
         </div>
       </div>
     </>

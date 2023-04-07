@@ -10,7 +10,7 @@ import {
 } from "react-icons/di";
 
 export default function Hero() {
-  function activateLasers() {
+  function openPortoflio() {
     location.href = "https://portfolio.wpsgames.com.br/";
   }
   return (
@@ -38,11 +38,11 @@ export default function Hero() {
 
           <div className={styles.btnsHero}>
             <button type="button">
-              <a href="#blog">Sobre mim</a>{" "}
+              <a href="#blog">Sobre mim</a>
             </button>
             <button
               className={styles.buttonLight}
-              onClick={activateLasers}
+              onClick={openPortoflio}
               type="button"
             >
               <span>Ver portfolio</span>

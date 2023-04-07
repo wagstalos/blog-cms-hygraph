@@ -2,9 +2,10 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogPost from "@/components/BlogCard";
-import Footer from "@/components/Footer"
-
+import AboutMe from "@/components/AboutMe";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Marquee from "@/components/Maquee";
 
 const graphcms = new GraphQLClient(
   "https://api-sa-east-1.hygraph.com/v2/clg3s1ng31koi01t3deilhg2d/master"
@@ -53,10 +54,19 @@ export default function Home({ posts }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className={styles.container}>
         <Hero />
+        <Marquee />
+        <section className="container">
+          <h5 className={styles.subtitle}>QUEM SOU</h5>
+          <h2 className={styles.title}>Apresentação</h2>
+          <AboutMe />
+        </section>
 
-        <h5 className={styles.subtitle} id="blog">BLOG</h5>
+        <h5 className={styles.subtitle} id="blog">
+          BLOG
+        </h5>
         <h2 className={styles.title}>Minhas publicações</h2>
         <div className={styles.dflex}>
           {posts.map((post) => (
@@ -75,7 +85,7 @@ export default function Home({ posts }) {
       </main>
 
       <footer>
-            <Footer/>
+        <Footer />
       </footer>
     </>
   );

@@ -42,6 +42,7 @@ a {
 
 p {
   color: var(--color-gray-middle);
+  line-height: 24px;
 }
 
 .container {
@@ -73,4 +74,33 @@ footer a {
 
 footer a:hover {
   color: var(--color-purple);
+}
+
+marquee{
+  background-color: #fbfbfb;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #9f9f9f;
+  display: flex;
+}
+
+marquee span{
+  margin-right: 24px;
+}
+marquee svg {
+  margin-left: 24px;
+}
+
+.icons-marquee{
+  margin-right: 4px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-flex > div{
+  display: flex;
+   align-items: center;
 }
