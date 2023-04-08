@@ -1,3 +1,4 @@
+import { Link } from "react-scroll/modules";
 import styles from "@/styles/Hero.module.css";
 import { RxArrowRight } from "react-icons/rx";
 import {
@@ -10,7 +11,7 @@ import {
 } from "react-icons/di";
 
 export default function Hero() {
-  function openPortoflio() {
+  function openPortfolio() {
     location.href = "https://portfolio.wpsgames.com.br/";
   }
   return (
@@ -37,17 +38,16 @@ export default function Hero() {
           </p>
 
           <div className={styles.btnsHero}>
-            <button type="button">
-              <a href="#blog">Sobre mim</a>
-            </button>
-            <button
-              className={styles.buttonLight}
-              onClick={openPortoflio}
-              type="button"
-            >
-              <span>Ver portfolio</span>
-              <RxArrowRight />
-            </button>
+            <Link to="aboutMe" smooth={true}>
+              <button type="button">Sobre mim</button>
+            </Link>
+
+            <Link onClick={openPortfolio}>
+              <button className={styles.buttonLight} type="button">
+                <span>Ver portfolio</span>
+                <RxArrowRight />
+              </button>
+            </Link>
           </div>
         </div>
 

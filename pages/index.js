@@ -59,14 +59,14 @@ export default function Home({ posts }) {
         <Hero />
         <Marquee />
         <section className="container">
-          <h5 className={styles.subtitle}>QUEM SOU</h5>
+          <h5 className={styles.subtitle} id="aboutMe">
+            QUEM SOU
+          </h5>
           <h2 className={styles.title}>Apresentação</h2>
           <AboutMe />
         </section>
 
-        <h5 className={styles.subtitle} id="blog">
-          BLOG
-        </h5>
+        <h5 className={styles.subtitle}>BLOG</h5>
         <h2 className={styles.title}>Minhas publicações</h2>
         <div className={styles.dflex}>
           {posts.map((post) => (
