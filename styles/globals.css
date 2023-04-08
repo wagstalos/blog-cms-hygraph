@@ -102,6 +102,10 @@ marquee svg:last-child {
   display: flex;
 }
 
+.s-between{
+  justify-content: space-between;
+}
+
 .d-flex>div {
   display: flex;
   align-items: center;

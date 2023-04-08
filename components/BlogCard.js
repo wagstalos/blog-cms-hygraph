@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "@/styles/BlogCard.module.css";
-import { RxArrowTopRight } from "react-icons/rx";
+import { RxArrowTopRight, RxCalendar } from "react-icons/rx";
 
 export default function BlogPost({
   title,
@@ -11,6 +11,10 @@ export default function BlogPost({
   description,
   slug,
 }) {
+  const data = datePublished;
+  const partes = data.split("-");
+  const dataFormatada = `${partes[2]}/${partes[1]}/${partes[0]}`;
+
   return (
     <div className={styles.card}>
       <Link href={"/posts/" + slug}>
@@ -22,10 +26,20 @@ export default function BlogPost({
           <p className={styles.description}>{description}</p>
 
           <div className={styles.author}>
-            <img className={styles.authorImg} src={author.avatar.url} alt="" />
-            <div>
-              <h5>{author.name}</h5>
-              <h5>{datePublished}</h5>
+            <div className={styles.authorFlex}>
+              <div className={styles.authorFlex}>
+                <img
+                  className={styles.authorImg}
+                  src={author.avatar.url}
+                  alt="avatar autor"
+                />
+                <h5>{author.name}</h5>
+              </div>
+
+              <div className={styles.authorCalendar}>
+                <RxCalendar size={18} />
+                <h5>{dataFormatada}</h5>
+              </div>
             </div>
           </div>
 

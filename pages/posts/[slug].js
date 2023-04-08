@@ -1,13 +1,6 @@
 import styles from "@/styles/Slug.module.css";
 import { GraphQLClient, gql } from "graphql-request";
-import {
-  RxCalendar,
-  RxPerson,
-  RxHome,
-  RxChevronLeft,
-  RxGithubLogo,
-} from "react-icons/rx";
-// import DOMPurify from "dompurify";
+import { RxCalendar, RxPerson, RxHome, RxGithubLogo } from "react-icons/rx";
 import parse from "html-react-parser";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -70,6 +63,9 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPost({ post }) {
+  const datePublished = post.datePublished
+  const partes = datePublished.split('-');
+  const dataFormatada = `${partes[2]}/${partes[1]}/${partes[0]}`;
   return (
     <>
       <main className={styles.blog}>
@@ -85,11 +81,12 @@ export default function BlogPost({ post }) {
             <span>Home</span>
           </Link>
 
-
           <h1>{post.title}</h1>
           <div className={styles.dateCenter}>
             <RxCalendar />
-            <h6>Publicado em: {post.datePublished}</h6>
+            <h6>
+              Publicado em: {dataFormatada}
+            </h6>
           </div>
 
           <div className={styles.author}>
@@ -107,9 +104,7 @@ export default function BlogPost({ post }) {
 
                 <div className={styles.date}>
                   <RxGithubLogo />
-                  <h6 className={styles.date}>
-                     /wagstalos
-                  </h6>
+                  <h6 className={styles.date}>/wagstalos</h6>
                 </div>
               </div>
             </div>
