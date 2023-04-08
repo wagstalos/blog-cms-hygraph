@@ -1,4 +1,3 @@
-import { Link } from "react-scroll/modules";
 import styles from "@/styles/Hero.module.css";
 import { RxArrowRight } from "react-icons/rx";
 import {
@@ -38,16 +37,14 @@ export default function Hero() {
           </p>
 
           <div className={styles.btnsHero}>
-            <Link to="aboutMe" smooth={true}>
-              <button type="button">Sobre mim</button>
-            </Link>
 
-            <Link onClick={openPortfolio}>
-              <button className={styles.buttonLight} type="button">
+              <a href="#aboutMe" type="button">Sobre mim</a>
+
+              <a href="https://portfolio.wpsgames.com.br/" target="_blank" rel="noopener noreferrer" className={styles.buttonLight} type="button">
                 <span>Ver portfolio</span>
                 <RxArrowRight />
-              </button>
-            </Link>
+              </a>
+           
           </div>
         </div>
 

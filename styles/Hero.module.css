@@ -45,7 +45,7 @@
     display: flex;
 }
 
-.hero button {
+.hero a {
     margin-top: 40px;
     background-color: var(--color-purple);
     color: var(--color-white);
@@ -58,7 +58,7 @@
     transition: background-color 0.5s ease;
 }
 
-.hero button:hover {
+.hero a:hover {
     background-color: var(--color-purple-dark);
 }
 
@@ -105,7 +105,7 @@
         height: auto;
     }
 
-    .hero button {
+    .hero a {
         padding: 12px 0;
         width: 100%;
     }
