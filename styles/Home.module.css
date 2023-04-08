@@ -9,13 +9,15 @@
   justify-content: space-between;
 }
 
-.title{
-  font-weight: 400;
+.title {
   text-align: center;
   margin-bottom: 20px;
+  color: var(--color-gray-dark);
+  font-size: 600;
+
 }
 
-.subtitle{
+.subtitle {
   text-align: center;
   color: var(--color-purple);
   background-color: #eee3f9;

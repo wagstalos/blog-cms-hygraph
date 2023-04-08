@@ -118,11 +118,14 @@
 
     .hero .buttonLight {
         justify-content: center;
-        /* background-color: rgb(245, 245, 245); */
+        background-color: #eee3f9;
         margin-left: 0;
         margin-top: 20px;
     }
 
+    .hero .buttonLight:hover {
+        background-color: #d8b2fd;
+    }
 
     .descriptionHero {
         width: 100%;
