@@ -123,6 +123,8 @@ marquee svg:last-child {
   position: absolute;
   padding: 0 12px;
   border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .Projeto {

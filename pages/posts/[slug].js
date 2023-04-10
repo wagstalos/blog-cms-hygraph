@@ -64,8 +64,8 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPost({ post }) {
-  const datePublished = post.datePublished
-  const partes = datePublished.split('-');
+  const datePublished = post.datePublished;
+  const partes = datePublished.split("-");
   const dataFormatada = `${partes[2]}/${partes[1]}/${partes[0]}`;
   return (
     <>
@@ -81,13 +81,14 @@ export default function BlogPost({ post }) {
             <RxHome color="#656AF5" size={24} />
             <span>Home</span>
           </Link>
+          <div className={styles.tagSlug}>
+          <p className={`tag ${post.tag}`}>{post.tag}</p>
+          </div>
 
           <h1>{post.title}</h1>
           <div className={styles.dateCenter}>
             <RxCalendar />
-            <h6>
-              Publicado em: {dataFormatada}
-            </h6>
+            <h6>Publicado em: {dataFormatada}</h6>
           </div>
 
           <div className={styles.author}>

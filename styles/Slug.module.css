@@ -11,7 +11,7 @@
 .blog h1 {
     font-size: 3rem;
     text-align: center;
-    margin: 40px 0 10px 0;
+    margin: 0px 0 10px 0;
 }
 
 .blog .content img {
@@ -66,7 +66,7 @@
     font-weight: 400;
 }
 
-.backHome {
+/* .backHome {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,11 +76,33 @@
     padding: 12px 8px;
     border-radius: 8px;
     margin: 0 auto;
+} */
+
+.backHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-purple);
+    font-weight: 600;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(13.5px);
+    margin: 0 auto;
+    width: 100px;
+    padding: 12px;
+    -webkit-box-shadow: 0px -7px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -7px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -7px 21px -15px rgba(0, 0, 0, 0.75);
 }
 
-.backHome:hover{
+.backHome:hover {
     background-color: #f3f3f3;
 }
+
 .backHome span {
     margin-left: 8px;
 }
@@ -100,6 +122,14 @@
     margin-bottom: 8px;
 }
 
+
+.tagSlug {
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
     .blog h1 {
         font-size: 2rem;
@@ -112,7 +142,7 @@
         bottom: 8px;
         left: 50%;
         transform: translateX(-50%);
-        background: rgba(255, 255, 255, 0.35);
+        background: rgba(255, 255, 255, 0.65);
         backdrop-filter: blur(13.5px);
         margin: 0 auto;
         width: 100px;
