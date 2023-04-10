@@ -19,6 +19,7 @@ const QUERY = gql`
       datePublished
       slug
       description
+      tag
       content {
         html
       }
@@ -79,6 +80,7 @@ export default function Home({ posts }) {
               key={post.id}
               datePublished={post.datePublished}
               slug={post.slug}
+              tag={post.tag}
             />
           ))}
         </div>

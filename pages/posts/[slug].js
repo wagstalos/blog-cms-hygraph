@@ -15,6 +15,7 @@ const QUERY = gql`
       id
       title
       slug
+      tag
       datePublished
       author {
         id

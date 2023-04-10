@@ -8,6 +8,7 @@ export default function BlogPost({
   coverPhoto,
   datePublished,
   content,
+  tag,
   description,
   slug,
 }) {
@@ -20,11 +21,12 @@ export default function BlogPost({
       <Link href={"/posts/" + slug}>
         <div className={styles.imgContainer}>
           <img className={styles.image} src={coverPhoto.url} alt={title} />
+          <p className={styles.tag}>{tag}</p>
         </div>
         <div className={styles.text}>
           <h3>{title}</h3>
+        
           <p className={styles.description}>{description}</p>
-
           <div className={styles.author}>
             <div className={styles.authorFlex}>
               <div className={styles.authorFlex}>

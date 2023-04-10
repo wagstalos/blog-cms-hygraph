@@ -14,12 +14,26 @@
     border-radius: 8px 8px 0 0;
     object-fit: cover;
 }
-.text{
+
+.tag {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-purple);
+    background-color: #e9ddff;
+    margin-top: -17px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    position: absolute;
+    padding: 0 12px;
+    border-radius: 15px;
+}
+
+.text {
     padding: 8px;
+    font-family: 'Inter', sans-serif;
 }
 
 .text h3 {
-    margin-bottom: 8px;
+    margin: 16px 0;
 }
 
 .text h5 {
@@ -49,21 +63,21 @@
     margin-bottom: 24px;
 }
 
-.authorFlex{
+.authorFlex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.authorCalendar{
+.authorCalendar {
     display: flex;
 }
 
-.authorCalendar h5{
+.authorCalendar h5 {
     margin-left: 4px;
 }
 
-.card button{
+.card button {
     width: 100%;
     height: 40px;
     font-weight: 600;
@@ -75,11 +89,11 @@
     transition: background-color 0.5s ease;
 
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
-.card button:hover{
+.card button:hover {
     color: var(--color-white);
     background-color: var(--color-purple);
 }
