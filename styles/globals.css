@@ -125,14 +125,41 @@ marquee svg:last-child {
   border-radius: 15px;
   font-size: 14px;
   font-weight: 500;
+  
 }
 
-.Projeto {
+.tag::first-letter{
+  text-transform: capitalize;
+}
+
+.projeto {
   color: var(--color-purple);
   background-color: #e9ddff;
 }
 
-.Artigo{
+.artigo{
   color: #2196F3;
   background-color: #cbe8ff;
 }
+
+/* btn share */
+.btn-share{
+  position: fixed;
+  background-color: var(--color-purple);
+  border: 5px solid rgb(241, 241, 241);
+  color: var(--color-white);
+  right: 16px;
+  bottom: 10px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: background-color .5s ease;
+}
+
+.btn-share:hover {
+  background-color: var(--color-purple-dark);
+}
+.btn-share svg{
+  margin-top: 2px;
+}
+

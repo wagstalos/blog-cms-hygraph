@@ -1,9 +1,10 @@
-import styles from "@/styles/Slug.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import { RxCalendar, RxPerson, RxHome, RxGithubLogo } from "react-icons/rx";
 import parse from "html-react-parser";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import ShareButton from "@/components/ShareButton";
+import styles from "@/styles/Slug.module.css";
 
 const graphcms = new GraphQLClient(
   "https://api-sa-east-1.hygraph.com/v2/clg3s1ng31koi01t3deilhg2d/master"
@@ -122,6 +123,7 @@ export default function BlogPost({ post }) {
       </main>
       <footer>
         <Footer />
+        <ShareButton />
       </footer>
     </>
   );
