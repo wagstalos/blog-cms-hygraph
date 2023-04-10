@@ -1,11 +1,11 @@
 .card {
-    margin-top: 40px;
     background-color: var(--color-white);
-    width: 30%;
+    width: 30.33%;
     border-radius: 8px;
     color: var(--color-gray-dark);
     box-shadow: 0 10px 15px -3px rgb(125 59 236/10%), 0 4px 6px -2px rgb(125 59 236/15%);
     font-family: 'Roboto Slab', serif;
+    margin: 40px 1.5% 1.5% 1.5%;
 }
 
 .image {
@@ -78,7 +78,6 @@
     align-items:center;
     justify-content: center;
 }
-
 
 .card button:hover{
     color: var(--color-white);

@@ -70,7 +70,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #f3f3f3; */
     color: var(--color-purple);
     font-weight: 600;
     width: 100px;
@@ -89,6 +88,16 @@
 .content {
     line-height: 26px;
     font-family: 'Roboto Slab', serif;
+}
+
+.content a {
+    color: var(--color-purple);
+    text-decoration: underline;
+
+}
+
+.content p {
+    margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 600px) {
