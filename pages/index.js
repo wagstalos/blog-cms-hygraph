@@ -6,6 +6,7 @@ import AboutMe from "@/components/AboutMe";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Maquee";
+import ShareButton from "@/components/ShareButton";
 
 const graphcms = new GraphQLClient(
   "https://api-sa-east-1.hygraph.com/v2/clg3s1ng31koi01t3deilhg2d/master"
@@ -88,6 +89,7 @@ export default function Home({ posts }) {
 
       <footer>
         <Footer />
+        <ShareButton />
       </footer>
     </>
   );
