@@ -19,6 +19,10 @@
     width: 100%;
 }
 
+.about p{
+  text-align: left;
+}
+
 .image {
     width: 45%;
 }
@@ -27,14 +31,19 @@
     width: 50%;
 }
 
+.description strong {
+    color: #7E83FF
+}
+
 .iconsHeader {
     margin-right: 8px;
     color: #bdbbbb;
 }
 
-.iconsHeader [data-tooltip]{
-    border: none!important;
+.iconsHeader [data-tooltip] {
+    border: none !important;
 }
+
 .icons:hover {
     color: var(--color-purple);
 }

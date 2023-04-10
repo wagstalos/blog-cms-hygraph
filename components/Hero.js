@@ -28,7 +28,7 @@ export default function Hero() {
         <div className={styles.descriptionHero}>
           <h2>
             Olá prazer, <br />
-            sou <strong>Wagner Silva</strong>!
+            sou <strong>Wagner Silva</strong>👋
           </h2>
           <p>
             Seja bem-vindo ao mundo da programação front-end! Como desenvolvedor
