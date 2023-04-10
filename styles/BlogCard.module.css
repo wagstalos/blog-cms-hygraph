@@ -8,23 +8,32 @@
     margin: 40px 1.5% 1.5% 1.5%;
 }
 
+.card button {
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+    color: var(--color-purple);
+    background-color: transparent;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-purple);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card button:hover {
+    color: var(--color-white);
+    background-color: var(--color-purple);
+}
+
 .image {
     width: 100%;
     height: 170px;
     border-radius: 8px 8px 0 0;
     object-fit: cover;
-}
-
-.tag {
-    font-family: 'Inter', sans-serif;
-    color: var(--color-purple);
-    background-color: #e9ddff;
-    margin-top: -17px;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    position: absolute;
-    padding: 0 12px;
-    border-radius: 15px;
 }
 
 .text {
@@ -75,27 +84,6 @@
 
 .authorCalendar h5 {
     margin-left: 4px;
-}
-
-.card button {
-    width: 100%;
-    height: 40px;
-    font-weight: 600;
-    color: var(--color-purple);
-    background-color: transparent;
-    border-radius: var(--border-radius);
-    border: 1px solid var(--color-purple);
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card button:hover {
-    color: var(--color-white);
-    background-color: var(--color-purple);
 }
 
 @media only screen and (max-width: 600px) {

@@ -21,7 +21,7 @@ export default function BlogPost({
       <Link href={"/posts/" + slug}>
         <div className={styles.imgContainer}>
           <img className={styles.image} src={coverPhoto.url} alt={title} />
-          <p className={styles.tag}>{tag}</p>
+          <p className={`tag ${tag}`}>{tag}</p>
         </div>
         <div className={styles.text}>
           <h3>{title}</h3>

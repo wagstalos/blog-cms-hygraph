@@ -112,3 +112,25 @@ marquee svg:last-child {
   display: flex;
   align-items: center;
 }
+
+/* tag card */
+
+.tag {
+  font-family: 'Inter', sans-serif;
+  margin-top: -17px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  position: absolute;
+  padding: 0 12px;
+  border-radius: 15px;
+}
+
+.Projeto {
+  color: var(--color-purple);
+  background-color: #e9ddff;
+}
+
+.Artigo{
+  color: #2196F3;
+  background-color: #cbe8ff;
+}
