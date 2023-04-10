@@ -104,7 +104,7 @@ marquee svg:last-child {
   display: flex;
 }
 
-.s-between{
+.s-between {
   justify-content: space-between;
 }
 
@@ -125,10 +125,10 @@ marquee svg:last-child {
   border-radius: 15px;
   font-size: 14px;
   font-weight: 500;
-  
+
 }
 
-.tag::first-letter{
+.tag::first-letter {
   text-transform: capitalize;
 }
 
@@ -137,15 +137,15 @@ marquee svg:last-child {
   background-color: #e9ddff;
 }
 
-.artigo{
+.artigo {
   color: #2196F3;
   background-color: #cbe8ff;
 }
 
-.btn-share{
+.btn-share {
   position: fixed;
   background-color: var(--color-purple);
-  border: 5px solid rgb(241, 241, 241);
+  border: none;
   color: var(--color-white);
   right: 16px;
   bottom: 10px;
@@ -153,12 +153,14 @@ marquee svg:last-child {
   padding: 8px 12px;
   border-radius: 999px;
   transition: background-color .5s ease;
+  -webkit-box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.26);
+  box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.26);
 }
 
 .btn-share:hover {
   background-color: var(--color-purple-dark);
 }
-.btn-share svg{
+
+.btn-share svg {
   margin-top: 2px;
 }
-
