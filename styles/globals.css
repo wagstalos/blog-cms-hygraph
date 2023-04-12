@@ -87,6 +87,38 @@ marquee {
   display: flex;
 }
 
+.marquee{
+  position: relative;
+}
+
+.marquee:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(270deg, #fff -16.41%, hsla(0, 0%, 100%, 0) 100);
+  z-index: 2;
+  left: auto;
+  right: 0;
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #fff);
+}
+
+.marquee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(270deg, #fff -16.41%, hsla(0, 0%, 100%, 0) 100);
+  z-index: 2;
+  background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), #ffffff);
+}
+
 marquee span {
   margin-right: 24px;
 }

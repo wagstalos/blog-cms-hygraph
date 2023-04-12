@@ -9,6 +9,7 @@ import {
 } from "react-icons/di";
 export default function Marquee() {
   return (
+    <div className="marquee">
     <marquee behavior="" direction="">
       <div className="d-flex">
         <div>
@@ -47,5 +48,6 @@ export default function Marquee() {
         </div>
       </div>
     </marquee>
+    </div>
   );
 }

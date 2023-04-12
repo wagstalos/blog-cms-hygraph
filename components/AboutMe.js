@@ -25,15 +25,16 @@ export default function AboutMe() {
           <DiCode size="32" color="#656AF5" className={styles.icons} />
           <h2>Prazer, sou Wagner Silva  👋 </h2>
           <p>
-            Formado em <strong> Design Gráfico</strong> (
+            Formado em Design Gráfico(
             <span data-tooltip="2012">UNIP</span>) ,
-            <strong>Desenvolvimento de Jogos Digitais</strong> (
+           Desenvolvimento de Jogos Digitais(
             <span data-tooltip="2016">ETEC</span>) e cursando Pós-Graduação
-            <strong> Desenvolvimento Fullstack de Sistemas Modernos para Nuvem
-            </strong> (<span data-tooltip="2023">UNESC</span>). Apaixonado por
+            Desenvolvimento Fullstack de Sistemas Modernos para Nuvem
+             (<span data-tooltip="2023">UNESC</span>). Apaixonado por
             tecnologias, trabalho com produção de sites, E-commerce (Salesforce
             SFCC), WordPress, SEO, aplicativos, PWA e jogos digitais utlizando
-            metodologias ágeis como Scrum e Kanban .
+            metodologias ágeis como Scrum e Kanban .,
+            
           </p>
 
           <h3>Skills</h3>
