@@ -187,6 +187,7 @@ marquee svg:last-child {
   transition: background-color .5s ease;
   -webkit-box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.26);
   box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.26);
+  z-index: 3;
 }
 
 .btn-share:hover {
