@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Maquee";
 import ShareButton from "@/components/ShareButton";
+import Title from "@/components/Title";
 
 const graphcms = new GraphQLClient(
   "https://api-sa-east-1.hygraph.com/v2/clg3s1ng31koi01t3deilhg2d/master"
@@ -60,31 +61,30 @@ export default function Home({ posts }) {
       <main className={styles.container}>
         <Hero />
         <Marquee />
+
         <section className="container">
-          <h5 className={styles.subtitle} id="aboutMe">
-            QUEM SOU
-          </h5>
-          <h2 className={styles.title}>Apresentação</h2>
+          <Title title="QUEM SOU" subtitle="Apresentação" />
           <AboutMe />
         </section>
 
-        <h5 className={styles.subtitle}>BLOG</h5>
-        <h2 className={styles.title}>Minhas publicações</h2>
-        <div className={styles.dflex}>
-          {posts.map((post) => (
-            <BlogPost
-              title={post.title}
-              description={post.description}
-              author={post.author}
-              coverPhoto={post.coverPhoto}
-              content={post.content}
-              key={post.id}
-              datePublished={post.datePublished}
-              slug={post.slug}
-              tag={post.tag}
-            />
-          ))}
-        </div>
+        <section>
+          <Title title="BLOG" subtitle="Minhas publicações" />
+          <div className={styles.dflex}>
+            {posts.map((post) => (
+              <BlogPost
+                title={post.title}
+                description={post.description}
+                author={post.author}
+                coverPhoto={post.coverPhoto}
+                content={post.content}
+                key={post.id}
+                datePublished={post.datePublished}
+                slug={post.slug}
+                tag={post.tag}
+              />
+            ))}
+          </div>
+        </section>
       </main>
 
       <footer>
