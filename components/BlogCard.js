@@ -35,7 +35,7 @@ export default function BlogPost({
                   src={author.avatar.url}
                   alt="avatar autor"
                 />
-                <h5>{author.name}</h5>
+                <p>{author.name}</p>
               </div>
 
               <div className={styles.authorCalendar}>

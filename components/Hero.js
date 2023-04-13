@@ -50,7 +50,7 @@ export default function Hero() {
 
         <div className={styles.imageHero}>
           <img
-            src="/images/wagner.png"
+            src="/images/wagner.webp"
             alt="Imagem do autor do site em um computador"
           />
         </div>

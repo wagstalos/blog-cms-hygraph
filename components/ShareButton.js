@@ -16,7 +16,7 @@ const ShareButton = () => {
     }
   };
 
-  return <button className='btn-share' onClick={shareLink}><RxShare1 size={24}/></button>;
+  return <button className='btn-share' onClick={shareLink} role="button" aria-label="Button share"><RxShare1 size={24}/></button>;
 };
 
 export default ShareButton;

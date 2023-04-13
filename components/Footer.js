@@ -22,7 +22,7 @@ export default function Hero() {
             <DiCodepen size="28"  />
           </a>
           <a
-            href="https://github.com/wagstalos"
+            href="https://www.linkedin.com/in/wagner-silva-6a163555/ "
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -30,7 +30,7 @@ export default function Hero() {
             <RxLinkedinLogo size="24" />
           </a>
           <a
-            href="https://www.linkedin.com/in/wagner-silva-6a163555/"
+            href="https://github.com/wagstalos"
             target="_blank"
             rel="noopener noreferrer"
           >
