@@ -33,7 +33,7 @@ export default function AboutMe() {
              (<span data-tooltip="2023">UNESC</span>). Apaixonado por
             tecnologias, trabalho com produção de sites, E-commerce (Salesforce
             SFCC), WordPress, SEO, aplicativos, PWA e jogos digitais utlizando
-            metodologias ágeis como Scrum e Kanban .,
+            metodologias ágeis como Scrum e Kanban.
             
           </p>
 

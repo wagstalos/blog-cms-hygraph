@@ -6,6 +6,7 @@ const ShareButton = () => {
       navigator
         .share({
           title: document.title,
+          tex: 'Seja bem-vindo ao mundo da programação front-end! Como desenvolvedor front-end.',
           url: window.location.href,
         })
         .then(() => console.log("Successful share"))
