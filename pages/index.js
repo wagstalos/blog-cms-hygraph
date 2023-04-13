@@ -70,7 +70,7 @@ export default function Home({ posts }) {
         />
         <meta
           property="og:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          content="https://media.graphassets.com/output=format:jpg/resize=height:800,fit:max/opE3i2LOQk8Z827cbif0"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -81,7 +81,7 @@ export default function Home({ posts }) {
         />
         <meta
           property="twitter:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          content="https://media.graphassets.com/output=format:jpg/resize=height:800,fit:max/opE3i2LOQk8Z827cbif0"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
