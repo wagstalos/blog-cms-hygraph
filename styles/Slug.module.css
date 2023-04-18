@@ -9,9 +9,15 @@
 }
 
 .blog h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     margin: 0px 0 10px 0;
+    color: var(--color-purple);
+}
+
+.blog p {
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .blog .content img {
@@ -66,18 +72,6 @@
     font-weight: 400;
 }
 
-/* .backHome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-purple);
-    font-weight: 600;
-    width: 100px;
-    padding: 12px 8px;
-    border-radius: 8px;
-    margin: 0 auto;
-} */
-
 .backHome {
     display: flex;
     align-items: center;
@@ -120,6 +114,7 @@
 
 .content p {
     margin-bottom: 8px;
+    color: #3d3d3d;
 }
 
 
