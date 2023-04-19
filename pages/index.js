@@ -15,7 +15,7 @@ const graphcms = new GraphQLClient(
 
 const QUERY = gql`
   {
-    posts {
+    posts(orderBy: createdAt_DESC) {
       id
       title
       datePublished
