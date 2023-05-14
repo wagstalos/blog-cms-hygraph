@@ -15,7 +15,7 @@ pnpm dev
 ## link project
 https://blog-cms-hygraph.vercel.app/
 
-##cms
+## CMS
 https://hygraph.com/
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
