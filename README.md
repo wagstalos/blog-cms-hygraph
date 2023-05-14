@@ -12,6 +12,12 @@ yarn dev
 pnpm dev
 ```
 
+## link project
+https://blog-cms-hygraph.vercel.app/
+
+##cms
+https://hygraph.com/
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
