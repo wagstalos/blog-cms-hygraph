@@ -91,7 +91,7 @@ export default function Home({ posts }) {
         <Marquee />
 
         <section className="container">
-          <Title title="QUEM SOU" subtitle="Apresentação" />
+          <Title title="QUEM SOU" subtitle="Apresentação" id="aboutMe" />
           <AboutMe />
         </section>
 
