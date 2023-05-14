@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## link project
+https://blog-cms-hygraph.vercel.app/
+
+## CMS
+https://hygraph.com/
+
 ## Getting Started
 
 First, run the development server:
@@ -11,12 +17,6 @@ yarn dev
 # or
 pnpm dev
 ```
-
-## link project
-https://blog-cms-hygraph.vercel.app/
-
-## CMS
-https://hygraph.com/
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
