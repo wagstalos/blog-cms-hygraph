@@ -86,8 +86,11 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.container}>
-        <Hero />
+      <main>
+        <div className={styles.container}>
+          <Hero />
+        </div>
+
         <Marquee />
 
         <section className="container">
@@ -95,7 +98,7 @@ export default function Home({ posts }) {
           <AboutMe />
         </section>
 
-        <section>
+        <section className="container">
           <Title title="BLOG" subtitle="Minhas publicações" />
           <div className={styles.dflex}>
             {posts.map((post) => (
