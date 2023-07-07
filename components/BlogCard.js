@@ -24,8 +24,8 @@ export default function BlogPost({
           <p className={`tag ${tag}`}>{tag}</p>
         </div>
         <div className={styles.text}>
-          <h3>{title}</h3>
-        
+          <h3 className="gradient">{title}</h3>
+
           <p className={styles.description}>{description}</p>
           <div className={styles.author}>
             <div className={styles.authorFlex}>
@@ -46,7 +46,7 @@ export default function BlogPost({
           </div>
 
           <div className={styles.date}></div>
-          <button type="button">
+          <button type="button" class="button-49" role="button">
             <span>VER MAIS</span>
             <RxArrowTopRight size={18} />
           </button>

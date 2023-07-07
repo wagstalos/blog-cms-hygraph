@@ -1,5 +1,5 @@
 .card {
-    background-color: var(--color-white);
+    background-color: #01060e;
     width: 30.33%;
     border-radius: 8px;
     color: var(--color-gray-dark);
@@ -7,7 +7,7 @@
     font-family: 'Roboto Slab', serif;
     margin: 40px 1.5% 1.5% 1.5%;
 }
-
+/* 
 .card button {
     width: 100%;
     height: 40px;
@@ -27,14 +27,14 @@
 .card button:hover {
     color: var(--color-white);
     background-color: var(--color-purple);
-}
+} */
 
 .image {
     width: 100%;
     height: 170px;
     border-radius: 8px 8px 0 0;
     object-fit: cover;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #3e3e3e;
 }
 
 .text {
@@ -44,6 +44,7 @@
 
 .text h3 {
     margin: 16px 0;
+    color: var(--color-white);
 }
 
 .text h5 {
@@ -51,7 +52,7 @@
 }
 
 .text p {
-    color: var(--color-gray-middle);
+    color: #b5b5b5;
 }
 
 .description {
@@ -81,6 +82,7 @@
 
 .authorCalendar {
     display: flex;
+    color: #b5b5b5;
 }
 
 .authorCalendar h5 {

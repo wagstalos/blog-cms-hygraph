@@ -6,10 +6,14 @@ import {
   DiGithubAlt,
   DiBootstrap,
   DiReact,
+  DiWordpress,
+  DiSass
 } from "react-icons/di";
+
 export default function Marquee() {
   return (
     <div className="marquee">
+      <img className="selo" src="images/SELO.svg" alt="" />
     <marquee behavior="" direction="">
       <div className="d-flex">
         <div>
@@ -25,6 +29,11 @@ export default function Marquee() {
           {" "}
           <DiCss3 size="20" color="#656AF5" className="icons-marquee" />
           <span>CSS3</span><RxLightningBolt size={16}/>
+        </div>
+        <div>
+          {" "}
+          <DiSass size="20" color="#656AF5" className="icons-marquee" />
+          <span>SASS</span><RxLightningBolt size={16}/>
         </div>
         <div>
           {" "}
@@ -45,6 +54,11 @@ export default function Marquee() {
           {" "}
           <DiGithubAlt size="20" color="#656AF5" className="icons-marquee" />
           <span>Github</span>
+        </div>
+        <div>
+          {" "}
+          <DiWordpress size="20" color="#656AF5" className="icons-marquee" />
+          <span>Wordpress</span>
         </div>
       </div>
     </marquee>

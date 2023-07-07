@@ -1,5 +1,6 @@
 import styles from "@/styles/Hero.module.css";
-import { RxArrowRight } from "react-icons/rx";
+import { RxArrowRight, RxArrowTopRight } from "react-icons/rx";
+
 import {
   DiHtml5,
   DiJavascript1,
@@ -7,26 +8,34 @@ import {
   DiGithubAlt,
   DiBootstrap,
   DiReact,
+  DiWordpress,
 } from "react-icons/di";
-
+import { RxLinkedinLogo } from "react-icons/rx";
+import { DiCodepen } from "react-icons/di";
 export default function Hero() {
   function openPortfolio() {
     location.href = "https://portfolio.wpsgames.com.br/";
   }
   return (
     <>
-      {/* <div className={styles.iconsHeader}>
-        <DiHtml5 size="32" color="#656AF5" className={styles.icons} />
-        <DiCss3 size="32" color="#656AF5" className={styles.icons} />
-        <DiJavascript1 size="32" color="#656AF5" className={styles.icons} />
-        <DiBootstrap size="32" color="#656AF5" className={styles.icons} />
-        <DiReact size="32" color="#656AF5" className={styles.icons} />
-        <DiGithubAlt size="32" color="#656AF5" className={styles.icons} />
-      </div> */}
+      <div className={styles.iconsHeader}>
+        <a href="https://codepen.io/wagstalos">
+          <DiCodepen size="32" color="#fff" className={styles.icons} />
+        </a>
+
+        <a href="https://github.com/wagstalos">
+          <DiGithubAlt size="32" color="#fff" className={styles.icons} />
+        </a>
+
+        <a href="https://www.linkedin.com/in/wagner-silva-6a163555/">
+          <RxLinkedinLogo size="28" color="#fff" className={styles.icons} />
+        </a>
+      </div>
 
       <h1 className={styles.title}>
-        Olá Prazer, sou 👋<br />
-        <span>Wagner Silva</span>
+        Olá Prazer, sou 👋
+        <br />
+        <span className={styles.gradient}>Wagner Silva</span>
       </h1>
 
       <div className={styles.hero}>
@@ -52,13 +61,13 @@ export default function Hero() {
               className={styles.buttonLight}
               type="button"
             >
-              <span>Ver portfolio</span>
-              <RxArrowRight />
+              <span>visite meu portfólio</span>
+              <RxArrowTopRight />
             </a>
           </div>
+
           <p>
-            Seja bem-vindo ao mundo da programação front-end! Como desenvolvedor
-            front-end.
+            Seja bem-vindo ao mundo da programação <strong>frontend</strong> !
           </p>
         </div>
 

@@ -5,8 +5,8 @@
 }
 
 .icons {
-    color: #656AF5;
-    background-color: #f7f7f7;
+    /* color: #656AF5; */
+    /* background-color: #03000a; */
     padding: 4px;
     border-radius: 4px;
     margin-right: 8px;
@@ -23,9 +23,6 @@
 .title span {
     font-size: 4.8rem;
     font-weight: 700;
-    background: -webkit-linear-gradient(#1CD1BC, #55B8FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .gradient {
@@ -41,10 +38,9 @@
     padding: 80px 0 0 0;
     color: var(--color-gray-dark);
     background-image: url(/images/back.png);
+    
     background-position: center;
-    /* Posiciona a imagem no centro */
     background-repeat: no-repeat;
-    /* Impede a repetição da imagem */
     background-size: cover;
 }
 
@@ -113,12 +109,12 @@
 }
 
 .descriptionHero img {
-    width: 237px;
+    width: 200px;
 }
 
 .descriptionHero p {
     width: 237px;
-    color: #A07EFF;
+    color: #7f7dfc;
     margin-top: 30px;
 }
 

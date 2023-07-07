@@ -86,7 +86,7 @@ export default function BlogPost({ post }) {
           <p className={`tag ${post.tag}`}>{post.tag}</p>
           </div>
 
-          <h1>{post.title}</h1>
+          <h1 className="gradient">{post.title}</h1>
           <div className={styles.dateCenter}>
             <RxCalendar />
             <h6>Publicado em: {dataFormatada}</h6>
