@@ -38,7 +38,7 @@
     padding: 80px 0 0 0;
     color: var(--color-gray-dark);
     background-image: url(/images/back.png);
-    
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,6 +166,19 @@
         width: 100%;
     }
 
+    .title {
+        font-size: 1.8rem;
+        color: var(--color-white);
+        font-weight: 300;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .title span {
+        font-size: 3.4rem;
+        font-weight: 700;
+    }
+
     .btnsHero {
         display: flex;
         justify-content: space-between;
@@ -186,8 +199,38 @@
         width: 100%;
     }
 
+    .descriptionHero p {
+        width: 100%;
+    }
+
+    .descriptionHero img {
+        width: 150px;
+    }
+
     .imageHero {
         width: 100%;
     }
+
+    .text {
+        width: 100%;
+    }
+
+    .text ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text ul li {
+        border: none;
+        margin-bottom: 5rem;
+    }
+
+    .text ul li h2 {
+        font-size: 2rem;
+    }
+    .text ul li p {
+        font-size: .9rem;
+    }
+
 
 }

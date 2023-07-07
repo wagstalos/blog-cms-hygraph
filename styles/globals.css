@@ -15,7 +15,7 @@
   --color-purple-dark-100: #2d3081;
   --color-purple-dark-200: #1b1d50;
   --color-gray-dark: rgb(63, 72, 86);
-  --color-gray-middle: #6B7280;
+  --color-gray-middle: #d7d7d7;
   --color-white: #fff;
 }
 
@@ -98,24 +98,24 @@ marquee {
 .selo {
   position: absolute;
   z-index: 1;
-  top: -18px;
-  left: 46%;
-  transform: transitionY(-50%);
+  top: -84px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 133px;
-  animation: spin 10s infinite linear;
+  /* width: 133px; */
+  animation: spin 10s infinite linear; 
 }
 
-@keyframes spin {
+ @keyframes spin {
   0% {
-    transform: translateY(-50%) rotate(0deg);
-    /* Define a rotação inicial como 0 graus */
+    transform: translateX(-50%) rotate(0deg);
   }
 
   100% {
-    transform: translateY(-50%) rotate(360deg);
-    /* Define a rotação final como 360 graus */
+    transform:translateX(-50%) rotate(360deg);
   }
 }
+
 
 /* .marquee:after {
   content: "";

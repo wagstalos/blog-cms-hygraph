@@ -28,7 +28,7 @@ export default function AboutMe() {
             Formado em Design Gráfico(
             <span data-tooltip="2012">UNIP</span>) ,
            Desenvolvimento de Jogos Digitais(
-            <span data-tooltip="2016">ETEC</span>) e cursando Pós-Graduação
+            <span data-tooltip="2016">ETEC</span>) e Pós-Graduação em
             Desenvolvimento Fullstack de Sistemas Modernos para Nuvem
              (<span data-tooltip="2023">UNESC</span>). Apaixonado por
             tecnologias, trabalho com produção de sites, E-commerce (Salesforce
