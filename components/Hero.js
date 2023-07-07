@@ -68,7 +68,8 @@ export default function Hero() {
           </div>
 
           <p>
-            Seja bem-vindo ao mundo da programação <strong>frontend</strong> !
+            Seja bem-vindo ao mundo da programação <strong>frontend</strong>! <br />
+            Dicas, carreira e muito mais.
           </p>
         </div>
 
