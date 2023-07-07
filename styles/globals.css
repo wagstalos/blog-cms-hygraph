@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 :root {
-  --max-width: 1000px;
+  --max-width: 1200px;
   --border-radius: 8px;
   --gutter: 8px;
 
@@ -12,8 +12,8 @@
 
   --color-purple: #656AF5;
   --color-purple-dark: #242ae4;
-  --color-purple-dark-100:#2d3081;
-  --color-purple-dark-200:#1b1d50;
+  --color-purple-dark-100: #2d3081;
+  --color-purple-dark-200: #1b1d50;
   --color-gray-dark: rgb(63, 72, 86);
   --color-gray-middle: #6B7280;
   --color-white: #fff;
@@ -36,7 +36,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: var(--color-white)
+  background: radial-gradient(circle at 3% 25%, #002853 0, #040c18 25%);
 }
 
 a {
@@ -81,19 +81,21 @@ footer a:hover {
 }
 
 marquee {
-  background-color: #fbfbfb;
-  padding: 10px;
+  background-color: #2DC9D0;
+  padding: 60px 0 10px 0;
   border-radius: 5px;
   font-size: 1.2rem;
-  color: #9f9f9f;
+  color: #fff;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.marquee{
+.marquee {
   position: relative;
 }
 
-.marquee:after {
+/* .marquee:after {
   content: "";
   position: absolute;
   top: 0;
@@ -101,11 +103,11 @@ marquee {
   display: block;
   width: 100px;
   height: 100%;
-  background: linear-gradient(270deg, #fff -16.41%, hsla(0, 0%, 100%, 0) 100);
+  background: linear-gradient(270deg, #040c18 -16.41%, hsla(0, 0%, 100%, 0) 100);
   z-index: 2;
   left: auto;
   right: 0;
-  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #fff);
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #040c18);
 }
 
 .marquee::before {
@@ -116,10 +118,10 @@ marquee {
   display: block;
   width: 100px;
   height: 100%;
-  background: linear-gradient(270deg, #fff -16.41%, hsla(0, 0%, 100%, 0) 100);
+  background: linear-gradient(270deg, #040c18 -16.41%, hsla(0, 0%, 100%, 0) 100);
   z-index: 2;
-  background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), #ffffff);
-}
+  background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), #040c18);
+} */
 
 marquee span {
   margin-right: 24px;
