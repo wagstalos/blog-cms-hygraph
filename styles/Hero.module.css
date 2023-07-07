@@ -2,14 +2,20 @@
     display: flex;
     justify-content: center;
     margin-top: 24px;
+
 }
 
 .icons {
-    /* color: #656AF5; */
+    color: #fff;
     /* background-color: #03000a; */
     padding: 4px;
     border-radius: 4px;
     margin-right: 8px;
+    transition: color .3s ease-in;
+}
+
+.icons:hover {
+    color: #656AF5;
 }
 
 .title {
@@ -92,13 +98,12 @@
     font-weight: 600;
     display: flex;
     align-items: center;
-    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
 }
 
-/* .hero .buttonLight:hover {
-    color: var(--color-purple-dark);
-    background-color: var(--color-white);
-} */
+.hero .buttonLight:hover {
+    color: rgba(255, 255, 255, .5)
+}
 
 .hero .buttonLight span {
     margin-right: var(--gutter);
@@ -145,7 +150,7 @@
     border-bottom: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .hero {
         flex-direction: column;
         padding: 50px 8px;
@@ -228,6 +233,7 @@
     .text ul li h2 {
         font-size: 2rem;
     }
+
     .text ul li p {
         font-size: .9rem;
     }

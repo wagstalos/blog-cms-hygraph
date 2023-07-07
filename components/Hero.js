@@ -1,17 +1,10 @@
 import styles from "@/styles/Hero.module.css";
 import { RxArrowRight, RxArrowTopRight } from "react-icons/rx";
 
-import {
-  DiHtml5,
-  DiJavascript1,
-  DiCss3,
-  DiGithubAlt,
-  DiBootstrap,
-  DiReact,
-  DiWordpress,
-} from "react-icons/di";
-import { RxLinkedinLogo } from "react-icons/rx";
+import { DiGithubAlt } from "react-icons/di";
+import { RxLinkedinLogo, RxGithubLogo } from "react-icons/rx";
 import { DiCodepen } from "react-icons/di";
+import { FaInstagram, FaBehance } from "react-icons/fa";
 export default function Hero() {
   function openPortfolio() {
     location.href = "https://portfolio.wpsgames.com.br/";
@@ -20,15 +13,23 @@ export default function Hero() {
     <>
       <div className={styles.iconsHeader}>
         <a href="https://codepen.io/wagstalos">
-          <DiCodepen size="32" color="#fff" className={styles.icons} />
+          <DiCodepen size="36" color="" className={styles.icons} />
         </a>
 
         <a href="https://github.com/wagstalos">
-          <DiGithubAlt size="32" color="#fff" className={styles.icons} />
+          <RxGithubLogo size="32" color="" className={styles.icons} />
         </a>
 
         <a href="https://www.linkedin.com/in/wagner-silva-6a163555/">
-          <RxLinkedinLogo size="28" color="#fff" className={styles.icons} />
+          <RxLinkedinLogo size="32" color="" className={styles.icons} />
+        </a>
+
+        <a href="https://www.instagram.com/wagner.paulo89/">
+          <FaInstagram size="32" color="" className={styles.icons} />
+        </a>
+
+        <a href="https://www.behance.net/wagstalos89">
+          <FaBehance size="32" color="" className={styles.icons} />
         </a>
       </div>
 

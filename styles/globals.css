@@ -98,11 +98,10 @@ marquee {
 .selo {
   position: absolute;
   z-index: 1;
-  top: -84px;
+  top: -54px;
   left: 50%;
   transform: translateX(-50%);
-  width: 133px;
-  /* width: 133px; */
+  width: 100px;
   animation: spin 10s infinite linear; 
 }
 
