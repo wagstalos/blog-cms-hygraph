@@ -29,6 +29,7 @@
 .title span {
     font-size: 4.8rem;
     font-weight: 700;
+    font-family: 'Righteous', cursive;
 }
 
 .gradient {
@@ -41,7 +42,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 80px 0 0 0;
+    padding: 20px 0 0 0;
     color: var(--color-gray-dark);
     background-image: url(/images/back.png);
 
