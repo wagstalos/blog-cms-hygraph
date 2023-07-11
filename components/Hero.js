@@ -94,6 +94,9 @@ export default function Hero() {
             src="/images/js.png"
             alt="js"
           />
+          <div className={styles.fade}>
+            
+          </div>
         </div>
 
         <div className={styles.text}>
