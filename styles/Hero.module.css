@@ -127,6 +127,77 @@
 .imageHero {
     width: 50%;
     margin-bottom: -10px;
+    position: relative;
+}
+
+.imageCss {
+    width: 8% !important;
+    position: absolute;
+    right: 3%;
+    top: 35%;
+    animation: floating 5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.imageHtml {
+    width: 6% !important;
+    position: absolute;
+    left: 6%;
+    top: 15%;
+    animation: floatingHtml 5s ease-in-out infinite;
+}
+
+@keyframes floatingHtml {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.imageJs {
+    width: 7% !important;
+    position: absolute;
+    left: -2%;
+    bottom: 5%;
+    animation: floatingJs 5s ease-in-out infinite;
+    filter: blur(0)
+}
+
+@keyframes floatingJs {
+    0% {
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+        filter: blur(2px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
 }
 
 .text {

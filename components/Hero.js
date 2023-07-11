@@ -68,7 +68,8 @@ export default function Hero() {
           </div>
 
           <p>
-            Seja bem-vindo ao mundo da programação <strong>frontend</strong>! <br />
+            Seja bem-vindo ao mundo da programação <strong>frontend</strong>!{" "}
+            <br />
             Dicas, carreira e muito mais.
           </p>
         </div>
@@ -77,6 +78,21 @@ export default function Hero() {
           <img
             src="/images/avatar-wps.png"
             alt="Imagem do autor do site em um computador"
+          />
+          <img
+            className={styles.imageCss}
+            src="/images/css.png"
+            alt="css3"
+          />
+          <img
+            className={styles.imageHtml}
+            src="/images/html.png"
+            alt="html5"
+          />
+             <img
+            className={styles.imageJs}
+            src="/images/js.png"
+            alt="js"
           />
         </div>
 
