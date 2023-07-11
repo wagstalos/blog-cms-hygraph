@@ -103,21 +103,21 @@ marquee {
   left: 50%;
   transform: translateX(-50%);
   width: 100px;
-  animation: spin 10s infinite linear; 
+  animation: spin 10s infinite linear;
 }
 
- @keyframes spin {
+@keyframes spin {
   0% {
     transform: translateX(-50%) rotate(0deg);
   }
 
   100% {
-    transform:translateX(-50%) rotate(360deg);
+    transform: translateX(-50%) rotate(360deg);
   }
 }
 
 
-/* .marquee:after {
+.marquee:after {
   content: "";
   position: absolute;
   top: 0;
@@ -125,11 +125,11 @@ marquee {
   display: block;
   width: 100px;
   height: 100%;
-  background: linear-gradient(270deg, #040c18 -16.41%, hsla(0, 0%, 100%, 0) 100);
+  background: linear-gradient(270deg, #2DC9D0 -16.41%, hsla(0, 0%, 100%, 0) 100);
   z-index: 2;
   left: auto;
   right: 0;
-  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #040c18);
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #2DC9D0);
 }
 
 .marquee::before {
@@ -140,10 +140,10 @@ marquee {
   display: block;
   width: 100px;
   height: 100%;
-  background: linear-gradient(270deg, #040c18 -16.41%, hsla(0, 0%, 100%, 0) 100);
+  background: linear-gradient(270deg, #2DC9D0 -16.41%, hsla(0, 0%, 100%, 0) 100);
   z-index: 2;
-  background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), #040c18);
-} */
+  background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), #2DC9D0);
+}
 
 marquee span {
   margin-right: 24px;
