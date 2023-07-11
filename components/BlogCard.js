@@ -46,7 +46,7 @@ export default function BlogPost({
           </div>
 
           <div className={styles.date}></div>
-          <button type="button" class="button-49" role="button">
+          <button type="button" className="button-49" role="button">
             <span>VER MAIS</span>
             <RxArrowTopRight size={18} />
           </button>
