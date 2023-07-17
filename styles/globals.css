@@ -116,7 +116,6 @@ marquee {
   }
 }
 
-
 .marquee:after {
   content: "";
   position: absolute;
@@ -172,7 +171,6 @@ marquee svg:last-child {
 }
 
 /* tag card */
-
 .tag {
   font-family: 'Inter', sans-serif;
   margin-top: -17px;
@@ -191,12 +189,12 @@ marquee svg:last-child {
 }
 
 .projeto {
-  color: #ffffff;
+  color: var(--color-white);
   background-color: #2DC9D0;
 }
 
 .artigo {
-  color: #ffffff;
+  color: var(--color-white);
   background-color: var(--color-purple);
 }
 
@@ -229,7 +227,6 @@ marquee svg:last-child {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 /* CSS */
 .button-49,

@@ -141,14 +141,17 @@
 @keyframes floating {
     0% {
         transform: translate(0, 0);
+        filter: blur(0);
     }
 
     50% {
         transform: translate(0, 10px);
+        filter: blur(2px);
     }
 
     100% {
         transform: translate(0, 0);
+        filter: blur(0);
     }
 }
 
@@ -163,14 +166,17 @@
 @keyframes floatingHtml {
     0% {
         transform: translate(0, 0);
+        filter: blur(0);
     }
 
     50% {
-        transform: translate(0, 5px);
+        transform: translate(0, 10px);
+        filter: blur(2px);
     }
 
     100% {
         transform: translate(0, 0);
+        filter: blur(0);
     }
 }
 
