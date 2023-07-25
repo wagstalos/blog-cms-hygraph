@@ -29,7 +29,8 @@
 .title span {
     font-size: 4.8rem;
     font-weight: 700;
-    font-family: 'Righteous', cursive;
+    /* font-family: 'Righteous', cursive; */
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .gradient {
