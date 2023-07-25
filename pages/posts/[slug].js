@@ -78,12 +78,12 @@ export default function BlogPost({ post }) {
         />
 
         <div className="container">
-          <Link href={"/"} className={styles.backHome}>
-            <RxHome color="#656AF5" size={24} />
-            <span>Home</span>
+          <Link href={"/"} className="button-85">
+            <RxHome color="#fff" size={24} />
+            {/* <span>Home</span> */}
           </Link>
           <div className={styles.tagSlug}>
-          <p className={`tag ${post.tag}`}>{post.tag}</p>
+            <p className={`tag ${post.tag}`}>{post.tag}</p>
           </div>
 
           <h1 className="gradient">{post.title}</h1>
