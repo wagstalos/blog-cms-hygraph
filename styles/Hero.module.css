@@ -2,12 +2,10 @@
     display: flex;
     justify-content: center;
     margin-top: 24px;
-
 }
 
 .icons {
-    color: #fff;
-    /* background-color: #03000a; */
+    color: var(--color-white);
     padding: 4px;
     border-radius: 4px;
     margin-right: 8px;
@@ -77,7 +75,6 @@
 }
 
 .hero a {
-    /* margin-top: 40px; */
     background-color: var(--color-purple);
     color: var(--color-white);
     font-weight: 700;
@@ -88,10 +85,6 @@
     font-size: 16px;
     transition: background-color 0.5s ease;
 }
-
-/* .hero a:hover {
-    background-color: var(--color-purple-dark);
-} */
 
 .hero .buttonLight {
     background-color: transparent;
@@ -121,7 +114,6 @@
 
 .descriptionHero p {
     width: 237px;
-    color: #7f7dfc;
     margin-top: 30px;
 }
 

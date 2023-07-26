@@ -62,7 +62,7 @@ export default function Hero() {
               className={styles.buttonLight}
               type="button"
             >
-              <span>visite meu portfólio</span>
+              <span>Visite meu portfólio</span>
               <RxArrowTopRight />
             </a>
           </div>

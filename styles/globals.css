@@ -3,8 +3,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Righteous&display=swap');
 
-
-
 :root {
   --max-width: 1200px;
   --border-radius: 8px;
@@ -21,6 +19,7 @@
   --color-gray-dark: rgb(63, 72, 86);
   --color-gray-middle: #d7d7d7;
   --color-white: #fff;
+  --color-cyan: #2DC9D0;
 }
 
 * {
@@ -35,7 +34,6 @@ body {
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -85,7 +83,7 @@ footer a:hover {
 }
 
 marquee {
-  background-color: #2DC9D0;
+  background-color: var(--color-cyan);
   padding: 4rem 0 1rem 0;
   font-size: 1.2rem;
   color: #fff;
@@ -126,11 +124,11 @@ marquee {
   display: block;
   width: 100px;
   height: 100%;
-  background: linear-gradient(270deg, #2DC9D0 -16.41%, hsla(0, 0%, 100%, 0) 100);
+  background: linear-gradient(270deg, var(--color-cyan) -16.41%, hsla(0, 0%, 100%, 0) 100);
   z-index: 2;
   left: auto;
   right: 0;
-  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #2DC9D0);
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), var(--color-cyan));
 }
 
 .marquee::before {
@@ -141,9 +139,9 @@ marquee {
   display: block;
   width: 100px;
   height: 100%;
-  background: linear-gradient(270deg, #2DC9D0 -16.41%, hsla(0, 0%, 100%, 0) 100);
+  background: linear-gradient(270deg, var(--color-cyan) -16.41%, hsla(0, 0%, 100%, 0) 100);
   z-index: 2;
-  background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), #2DC9D0);
+  background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), var(--color-cyan));
 }
 
 marquee span {
@@ -192,7 +190,7 @@ marquee svg:last-child {
 
 .projeto {
   color: var(--color-white);
-  background-color: #2DC9D0;
+  background-color: var(--color-cyan);
 }
 
 .artigo {
@@ -209,7 +207,7 @@ marquee svg:last-child {
   bottom: 10px;
   cursor: pointer;
   padding: 8px 12px;
-  border-radius: 999px;
+  border-radius: 15px;
   transition: background-color .5s ease;
   -webkit-box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.26);
   box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.26);
@@ -267,8 +265,8 @@ marquee svg:last-child {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #7f7dfc 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  background: linear-gradient(45deg, transparent 3%, var(--color-cyan) 3%, var(--color-cyan) 5%, #7f7dfc 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px var(--color-cyan);
   clip-path: var(--slice-0);
 }
 
@@ -337,7 +335,10 @@ marquee svg:last-child {
 
 /* CSS */
 .button-85 {
-  padding: 0.6em 1em;
+  /* padding: 0.6em 1em; */
+  padding: 8px 12px;
+  width: 48px;
+  height: 47px;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -345,12 +346,13 @@ marquee svg:last-child {
   cursor: pointer;
   position: fixed;
   z-index: 0;
-  border-radius: 10px;
+  border-radius: 15px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 16px;
+  /* left: 50%;
+  transform: translateX(-50%); */
 
   margin-top: 20px;
   width: 50px;
@@ -360,7 +362,7 @@ marquee svg:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 18px;
+  bottom: 69px;
 }
 
 .button-85:before {
@@ -386,7 +388,7 @@ marquee svg:last-child {
   height: calc(100% + 4px);
   animation: glowing-button-85 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 @keyframes glowing-button-85 {
@@ -412,6 +414,5 @@ marquee svg:last-child {
   background: #201a31;
   left: 0;
   top: 0;
-  border-radius: 10px;
-
+  border-radius: 15px;
 }
