@@ -45,7 +45,7 @@ export default function Hero() {
       <div className={styles.hero}>
         <div className={styles.descriptionHero}>
           <Image
-            src="/images/image-port.png"
+            src="images/image-port.png"
             alt="Imagem do autor do site em um computador"
             width={200}
             height={162}
@@ -72,7 +72,7 @@ export default function Hero() {
 
         <div className={styles.imageHero}>
           <Image
-            src="/images/avatar-wps.png"
+            src="images/avatar-wps.png"
             alt="Imagem do autor do site em um computador"
             width={600}
             height={520}
@@ -80,7 +80,7 @@ export default function Hero() {
 
           <Image
             className={styles.imageCss}
-            src="/images/css.png"
+            src="images/css.png"
             alt="css3"
             width={42}
             height={47}
@@ -88,7 +88,7 @@ export default function Hero() {
 
           <Image
             className={styles.imageHtml}
-            src="/images/html.png"
+            src="images/html.png"
             alt="html5"
             width={42}
             height={47}
@@ -96,7 +96,7 @@ export default function Hero() {
 
           <Image
             className={styles.imageJs}
-            src="/images/js.png"
+            src="images/js.png"
             alt="js"
             width={42}
             height={47}

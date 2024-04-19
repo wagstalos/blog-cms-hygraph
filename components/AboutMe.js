@@ -20,7 +20,7 @@ export default function AboutMe() {
       <div className={styles.about}>
         <div className={styles.image}>
           <Image
-            src="/images/terminal.png"
+            src="images/terminal.png"
             alt="terminal de códigos"
             width={524}
             height={435}
