@@ -2,7 +2,8 @@
 
 module.exports = {
   reactStrictMode: true,
+  assetPrefix: "./",
   eslint: {
     ignoreDuringBuilds: true,
   },
-}
+};
