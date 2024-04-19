@@ -1,5 +1,6 @@
 import styles from "@/styles/AboutMe.module.css";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import Image from "next/image";
 import {
   DiHtml5,
   DiJavascript1,
@@ -18,23 +19,27 @@ export default function AboutMe() {
     <>
       <div className={styles.about}>
         <div className={styles.image}>
-          <img src="/images/terminal.png" alt="terminal de códigos" />
+          <Image
+            src="/images/terminal.png"
+            alt="terminal de códigos"
+            width={524}
+            height={435}
+          />
         </div>
 
         <div className={styles.description}>
           <DiCode size="32" color="#656AF5" className={styles.icons} />
-          <h2>Prazer, sou Wagner Silva  👋 </h2>
+          <h2>Prazer, sou Wagner Silva 👋 </h2>
           <p>
             Formado em Design Gráfico(
-            <span data-tooltip="2012">UNIP</span>) ,
-           Desenvolvimento de Jogos Digitais(
+            <span data-tooltip="2012">UNIP</span>) , Desenvolvimento de Jogos
+            Digitais(
             <span data-tooltip="2016">ETEC</span>) e Pós-Graduação em
-            Desenvolvimento Fullstack de Sistemas Modernos para Nuvem
-             (<span data-tooltip="2023">UNESC</span>). Apaixonado por
-            tecnologias, trabalho com produção de sites, E-commerce (Salesforce
-            SFCC), WordPress, SEO, aplicativos, PWA e jogos digitais utlizando
+            Desenvolvimento Fullstack de Sistemas Modernos para Nuvem (
+            <span data-tooltip="2023">UNESC</span>). Apaixonado por tecnologias,
+            trabalho com produção de sites, E-commerce (Salesforce SFCC),
+            WordPress, SEO, aplicativos, PWA e jogos digitais utlizando
             metodologias ágeis como Scrum e Kanban.
-            
           </p>
 
           <h3>Skills</h3>

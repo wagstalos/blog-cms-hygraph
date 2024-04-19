@@ -1,10 +1,13 @@
 import styles from "@/styles/Hero.module.css";
 import { RxArrowRight, RxArrowTopRight } from "react-icons/rx";
 
+import Image from "next/image";
+
 import { DiGithubAlt } from "react-icons/di";
 import { RxLinkedinLogo, RxGithubLogo } from "react-icons/rx";
 import { DiCodepen } from "react-icons/di";
 import { FaInstagram, FaBehance } from "react-icons/fa";
+
 export default function Hero() {
   function openPortfolio() {
     location.href = "https://portfolio.wpsgames.com.br/";
@@ -41,20 +44,13 @@ export default function Hero() {
 
       <div className={styles.hero}>
         <div className={styles.descriptionHero}>
-          {/* <h1>
-            Olá prazer, <br />
-            sou <strong>Wagner Silva</strong>👋
-          </h1> */}
-          <img
+          <Image
             src="/images/image-port.png"
             alt="Imagem do autor do site em um computador"
-            width="50px"
+            width={200}
+            height={162}
           />
           <div className={styles.btnsHero}>
-            {/* <a href="#aboutMe" type="button">
-              Sobre mim
-            </a> */}
-
             <a
               href="https://portfolio.wpsgames.com.br/"
               target="_blank"
@@ -75,36 +71,40 @@ export default function Hero() {
         </div>
 
         <div className={styles.imageHero}>
-          <img
+          <Image
             src="/images/avatar-wps.png"
             alt="Imagem do autor do site em um computador"
+            width={600}
+            height={520}
           />
-          <img
+
+          <Image
             className={styles.imageCss}
             src="/images/css.png"
             alt="css3"
+            width={42}
+            height={47}
           />
-          <img
+
+          <Image
             className={styles.imageHtml}
             src="/images/html.png"
             alt="html5"
+            width={42}
+            height={47}
           />
-             <img
+
+          <Image
             className={styles.imageJs}
             src="/images/js.png"
             alt="js"
+            width={42}
+            height={47}
           />
-          <div className={styles.fade}>
-            
-          </div>
+          <div className={styles.fade}></div>
         </div>
 
         <div className={styles.text}>
-          {/* <img
-            src="/images/wagner.webp"
-            alt="Imagem do autor do site em um computador"
-          /> */}
-
           <ul>
             <li>
               <h2 className={styles.gradient}>+25</h2>
