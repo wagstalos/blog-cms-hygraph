@@ -82,6 +82,21 @@ footer a:hover {
   color: var(--color-purple);
 }
 
+footer .wps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .wps img {
+  margin-left: 8px;
+}
+
+footer .wps a {
+  display: flex;
+  align-items: center;
+}
+
 marquee {
   background-color: var(--color-cyan);
   padding: 4rem 0 1rem 0;

@@ -1,25 +1,27 @@
 import { RxLinkedinLogo, RxGithubLogo } from "react-icons/rx";
-import {
-  DiCodepen,
-} from "react-icons/di";
+import { DiCodepen } from "react-icons/di";
+import Image from "next/image";
 export default function Hero() {
   return (
     <>
       <div className="container">
         <div>
           <p>
-            <a href="https://portfolio.wpsgames.com.br/"> <strong>© Wagner Silva </strong></a>
+            <a href="https://portfolio.wpsgames.com.br/">
+              {" "}
+              <strong>© Wagner Silva </strong>
+            </a>
             2023 😎
           </p>
         </div>
 
         <div>
-        <a
+          <a
             href="https://codepen.io/wagstalos"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <DiCodepen size="28"  />
+            <DiCodepen size="28" />
           </a>
           <a
             href="https://www.linkedin.com/in/wagner-silva-6a163555/ "
@@ -35,10 +37,21 @@ export default function Hero() {
             rel="noopener noreferrer"
           >
             {" "}
-            <RxGithubLogo size="24"  />
+            <RxGithubLogo size="24" />
           </a>
-
         </div>
+      </div>
+
+      <div className="wps">
+        <a href="https://wpsgames.com.br/">
+          <p>Desenvolvido por:</p>
+          <Image
+            src="images/favicon.svg"
+            alt="terminal de códigos"
+            width={32}
+            height={42}
+          />
+        </a>
       </div>
     </>
   );

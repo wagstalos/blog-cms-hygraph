@@ -22,13 +22,20 @@ export default function AboutMe() {
           <Image
             src="images/terminal.png"
             alt="terminal de códigos"
-            width={524}
+            width={600}
             height={435}
           />
         </div>
 
         <div className={styles.description}>
-          <DiCode size="32" color="#656AF5" className={styles.icons} />
+          {/* <DiCode size="32" color="#656AF5" className={styles.icons} /> */}
+          <Image
+            className={styles.icons}
+            src="images/favicon.svg"
+            alt="terminal de códigos"
+            width={32}
+            height={42}
+          />
           <h2>Prazer, sou Wagner Silva 👋 </h2>
           <p>
             Formado em Design Gráfico(

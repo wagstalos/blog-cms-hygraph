@@ -86,7 +86,7 @@ export default function Home({ posts }) {
           property="twitter:image"
           content="https://media.graphassets.com/output=format:jpg/resize=height:800,fit:max/opE3i2LOQk8Z827cbif0"
         ></meta>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main>

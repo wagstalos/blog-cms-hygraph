@@ -21,7 +21,7 @@
     color: var(--color-white);
     font-weight: 300;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 25px;
 }
 
 .title span {
@@ -259,7 +259,7 @@
         color: var(--color-white);
         font-weight: 300;
         text-align: center;
-        margin-top: 55px;
+        margin-top: 25px;
     }
 
     .title span {

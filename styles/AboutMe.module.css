@@ -18,7 +18,8 @@
 }
 
 .about img {
-    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .about p {
